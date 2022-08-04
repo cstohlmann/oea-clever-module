@@ -3,6 +3,11 @@ Clever offers single sign-on access for students and teachers to their digital l
 
 This data will allow education leaders to see which applications are being used for learning. It will contribute to the Digital Learning Insights use case, by allowing the OEA community to combine it with learning outcome data.  
 
+## Module Setup
+1. Import the Clever_main_pipeline template into your Synapse workspace.
+2. Import the [Clever module class notebook]() into your Synapse workspace. After ensuring your Synapse workspace contains both the Clever module notebooks (Clever_py and Clever_module_ingestion), trigger the main pipeline. Two databases will be created upon the successful trigger: s2_clever and sqls2_clever.
+3. Download the Power BI template file Clever Module Dashboard and connect to your Synapse workspace serverless SQL endpoint. You will want to change the dashboard template from Import to a directQuery from the sqls2_clever database.
+
 ## Problem Statement
 Collecting data related to the digital activity/engagement is crucial to understanding the success and struggle of students. As digital learning continues to become more prevalent, understanding the resources that students use is fundamental to better supporting student success, in and out of the classroom.  
 
@@ -16,16 +21,15 @@ This Clever Participation Reports module for OEA will leverage the Azure Synapse
 
 These dashboard examples represent only data from the Participation Reports from Clever. There are many other Clever reports that could be used instead, or in combination with these Participation Reports. When this data is combined with other data sources, they can illustrate how patterns of digital activity relate to learning outcomes, or answering questions related to the equity of access. With such combined data, education systems can start to analyze interventions help to improve student learning with digital tools.  
 
-## Data Sources and Module Setup 
-### Data Sources
+## Data Sources
 The module will connect to Clever's SFTP server and pull CSV files from daily-participation and resource-usage. The Clever pipeline will only bring over new CSV files.
-### Module Setup
 
 ## Module Components 
 Out-of-the box assets for this OEA module include: 
-1. [Pipeline]() for ingesting data into the data lake and automating the various stages of the process.
-2. [Notebook]() for cleaning, transforming, anonymizing and enriching the data.
-3. [PowerBI template]() for exploring, visualizing and deriving insights from the data.
+1. [Sample Datasets](): Ingest sample data to understand the utility and functionality of the pipelines and notebooks.
+2. [Pipeline](): 3 pipeline templates - One main pipeline for data extraction and ingestion to stage 2, one sub-pipeline which lands Clever data to the Synapse workspace data lake, and one that extracts the test data provided within this module to the Synapse workspace.
+3. [Notebook](): 2 notebooks - A class notebook that defines the functions of data ingestion/processing the data from stage 1 to stage 2 within Synapse (Clever_py), and an ingestion notebook used to process the data by calling the functions in the class notebook (Clever_module_ingestion).
+4. [PowerBI template]() for exploring, visualizing and deriving insights from the data.
 
 [CHANGE]  | [CHANGE]
 :-------------------------:|:-------------------------:
