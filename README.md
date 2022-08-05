@@ -33,7 +33,7 @@ Out-of-the box assets for this OEA module include:
 
 Explanation  | Usage Summary
 :-------------------------:|:-------------------------:
-![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Microsoft_Data/Microsoft_Graph/docs/images/Graph%20API%20Explanation%20Page.png)  |  ![](https://github.com/cstohlmann/oea-clever-module/blob/main/docs/images/Clever%20Module%20Dashboard%20Sample.png) 
+![](https://github.com/cstohlmann/oea-clever-module/blob/main/docs/images/Clever%20Module%20Explanation%20Page.png)  |  ![](https://github.com/cstohlmann/oea-clever-module/blob/main/docs/images/Clever%20Module%20Dashboard%20Sample.png) 
  
 
 The Clever module [welcomes contributions.](https://github.com/microsoft/OpenEduAnalytics/blob/main/CONTRIBUTING.md) 
