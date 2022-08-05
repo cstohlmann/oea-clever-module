@@ -31,9 +31,9 @@ Out-of-the box assets for this OEA module include:
 3. [Notebook](): 2 notebooks - A class notebook that defines the functions of data ingestion/processing the data from stage 1 to stage 2 within Synapse (Clever_py), and an ingestion notebook used to process the data by calling the functions in the class notebook (Clever_module_ingestion).
 4. [PowerBI template]() for exploring, visualizing and deriving insights from the data.
 
-[CHANGE]  | [CHANGE]
+Explanation  | Usage Summary
 :-------------------------:|:-------------------------:
-![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Microsoft_Data/Microsoft_Graph/docs/images/Graph%20API%20Explanation%20Page.png)  |  ![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Microsoft_Data/Microsoft_Graph/docs/images/Graph%20API%20Dashboard%20Sample.png) 
+![](https://github.com/microsoft/OpenEduAnalytics/blob/main/modules/Microsoft_Data/Microsoft_Graph/docs/images/Graph%20API%20Explanation%20Page.png)  |  ![](https://github.com/cstohlmann/oea-clever-module/blob/main/docs/images/Clever%20Module%20Dashboard%20Sample.png) 
  
 
 The Clever module [welcomes contributions.](https://github.com/microsoft/OpenEduAnalytics/blob/main/CONTRIBUTING.md) 
