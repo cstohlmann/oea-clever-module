@@ -27,7 +27,7 @@ The module will connect to Clever's SFTP server and pull CSV files from daily-pa
 ## Module Components 
 Out-of-the box assets for this OEA module include: 
 1. [Sample Datasets](): Ingest sample data to understand the utility and functionality of the pipelines and notebooks.
-2. [Pipeline](): 3 pipeline templates - One main pipeline for data extraction and ingestion to stage 2, one sub-pipeline which lands Clever data to the Synapse workspace data lake, and one that extracts the test data provided within this module to the Synapse workspace.
+2. [Pipeline](): 3 pipeline templates - One main pipeline for data extraction and ingestion to stage 2, one sub-pipeline which lands Clever data to the Synapse workspace data lake, and another sub-pipeline that extracts the test data provided within this module to the Synapse workspace.
 3. [Notebook](): 2 notebooks - A class notebook that defines the functions of data ingestion/processing the data from stage 1 to stage 2 within Synapse (Clever_py), and an ingestion notebook used to process the data by calling the functions in the class notebook (Clever_module_ingestion).
 4. [PowerBI template](): A Power BI sample template making it easy to interact with Clever data. See below for examples of developed PowerBI dashboard pages.
 
